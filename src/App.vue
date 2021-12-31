@@ -1,21 +1,23 @@
 <template id="app">
-			<el-affix class="app-affix-wrapper" target="#app" :offset="60">
-				<el-dropdown @command="change_dictionary">
+	<el-row justify="end">
+		<el-affix class="app-affix-wrapper" :offset="32">
+			<el-dropdown @command="change_dictionary">
 				<el-button
 					class="app-btn"
 					color="#383C6D"
 					:icon="SetUp"
 					circle
 				/>
-					<template #dropdown>
-						<el-dropdown-menu>
-							<el-dropdown-item command="korean">한국어</el-dropdown-item>
-							<el-dropdown-item command="english">English</el-dropdown-item>
-							<el-dropdown-item command="japanese">日本語</el-dropdown-item>
-						</el-dropdown-menu>
-					</template>
-				</el-dropdown>
-			</el-affix>
+				<template #dropdown>
+					<el-dropdown-menu>
+						<el-dropdown-item command="korean">한국어</el-dropdown-item>
+						<el-dropdown-item command="english">English</el-dropdown-item>
+						<el-dropdown-item command="japanese">日本語</el-dropdown-item>
+					</el-dropdown-menu>
+				</template>
+			</el-dropdown>
+		</el-affix>
+	</el-row>
 	<el-row
 		justify="center"
 	>
@@ -88,7 +90,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 32px;
   font-family: 'Do Hyeon', 'Noto Sans JP', sans-serif;
 	--lhs-primary-color: #7586A6;
 	--lhs-secondary-color: #383C6D;
@@ -108,8 +110,7 @@ export default {
 }
 	
 .app-affix-wrapper {
-	position: absolute;
-	right: 60px;
+	margin-right: 32px;
 }
 
 .app-btn {

@@ -1,5 +1,5 @@
 <template>
-	<el-card shadow="always">
+	<el-card class="item-card" shadow="always">
 		<el-row>
 			<el-image
 				class="noselect item-image"
@@ -110,7 +110,11 @@ export default {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
-	
+
+.item-card {
+	margin-bottom: 20px;	
+}
+
 .item-image {
 	width: 100%;
 	height: 320px;

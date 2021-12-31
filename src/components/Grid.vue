@@ -4,7 +4,7 @@
 		:gutter="20"
 	>
 		<el-col
-			:md="24" :lg="12" :xl="8"
+			:xs="24" :sm="12" :lg="8"
 			v-for="(item,key) in list"
 			v-bind:key="key"
 		>

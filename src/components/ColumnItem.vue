@@ -1,7 +1,7 @@
 <template>
 	<el-card class="item-card" shadow="always">
 		<el-row justify="center">
-			<el-col :span="12">
+			<el-col :xs="18" :md="12">
 				<el-row justify="center">
 					<el-image
 						class="noselect item-image"
