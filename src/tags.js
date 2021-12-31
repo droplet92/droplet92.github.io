@@ -1,0 +1,58 @@
+const languages = [
+	"C",
+	"C++",
+	"C++11",
+	"C++14",
+	"C++17",
+	"C++20",
+	"C#",
+	"JavaScript",
+	"TypeScript",
+	"Go",
+	"Python",
+	"Java",
+	"Lua",
+	"batch",
+	"bash",
+	"tcsh",
+	"Rust",
+	"Dart",
+	"Ruby",
+];
+
+const techstacks = [
+	"Sqlite",
+	"SFML",
+	"OpenGL",
+	"Detours",
+	"React",
+	"Vue",
+	"koa",
+	"WPF",
+	"WinForms",
+	"ASP.NET",
+	"antd",
+	"Element Plus",
+	"Vuetify",
+	"TypeORM",
+	"Unity",
+	"Docker",
+	"AWS",
+	"WMI",
+	"WinAPI",
+	"NSFWjs",
+];
+
+const concepts = [
+	"Motion Capture",
+	"Hooking",
+	"DLL Injection",
+	"Web",
+	"Windows Application",
+	"Game",
+	"Socket",
+	"Machine Learning",
+	"Minimax",
+];
+
+export { languages, techstacks, concepts };
