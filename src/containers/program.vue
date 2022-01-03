@@ -31,7 +31,7 @@ export default {
 			return [
 				{
 					title: "reversi",
-					image: "https://cdn.britannica.com/79/191679-050-C7114D2B/Adult-capybara.jpg",
+					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/reversi.gif?raw=true",
 					url: "https://github.com/droplet92/reversi",
 					begin: "2019. 07.",
 					end: "2019. 11.",
@@ -51,7 +51,7 @@ export default {
 						english: "CIA Club Homepage",
 						japanese: "CIA 同好会 ホームページ",
 					}[this.language],
-					image: "https://natashaskitchen.com/wp-content/uploads/2020/05/Vanilla-Cupcakes-3.jpg",
+					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/cia.gif?raw=true",
 					url: "https://github.com/CartoonIsArt",
 					begin: "2017. 09.",
 					end: "2021. 10.",
@@ -63,7 +63,7 @@ export default {
 						english: "KKLIM Game Dev Team",
 						japanese: "KKLIMゲーム開発チーム",
 					}[this.language],
-					image: "https://www.nintendo.com//content/dam/noa/en_US/games/switch/s/splatoon-2-switch/splatoon-2-switch-hero.jpg",
+					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/dev.jpg?raw=true",
 					url: "https://bitbucket.org",
 					begin: "2021",
 					end: "2023",
