@@ -39,7 +39,7 @@ export default {
 				},
 				{
 					title: "devichat",
-					image: "https://chico.ca.us/sites/main/files/imagecache/lightbox/main-images/dog_license.jpg",
+					image: "https://github.com/droplet92/devichat/blob/master/2020-07-15-20-50-47.png?raw=true",
 					url: "https://github.com/droplet92/devichat",
 					begin: "2020. 10.",
 					end: "2020. 10.",
