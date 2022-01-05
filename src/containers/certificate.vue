@@ -4,7 +4,7 @@
 			justify="center"
 		>
 			<h1>
-				자격증
+				{{title[language]}}
 			</h1>
 		</el-row>
 		<el-row justify="center">
@@ -29,6 +29,13 @@ export default {
 	props: {
 		language: String,
 	},
+	data: () => ({
+		title: {
+			korean: "자격증",
+			english: "Certificates",
+			japanese: "資格",
+		},
+	}),
 	computed: {
 		certificates() {
 			return [

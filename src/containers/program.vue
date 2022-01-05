@@ -4,7 +4,7 @@
 			justify="center"
 		>
 			<h1>
-				프로그램
+				{{title[language]}}
 			</h1>
 		</el-row>
 		<el-row>
@@ -26,6 +26,13 @@ export default {
 	props: {
 		language: String,
 	},
+	data: () => ({
+		title: {
+			korean: "프로그램",
+			english: "Applications",
+			japanese: "アプリケーション",
+		},
+	}),
 	computed: {
 		programs() {
 			return [

@@ -4,7 +4,7 @@
 			justify="center"
 		>
 			<h1>
-				경력
+				{{title[language]}}
 			</h1>
 		</el-row>
 		<el-row justify="center">
@@ -29,6 +29,13 @@ export default {
 	props: {
 		language: String,
 	},
+	data: () => ({
+		title: {
+			korean: "경력",
+			english: "Career",
+			japanese: "キャリア",
+		},
+	}),
 	computed: {
 		career() {
 			return [
@@ -52,7 +59,7 @@ export default {
 					title: {
 						korean: "광운대학교 컴퓨터정보공학부 (4.19/4.5, GPA 3.72)",
 						english: "Kwangwoon University Computer Information Engineering (4.19/4.5, GPA 3.72)",
-						japanese: "Kwangwoon University Computer Information Engineering (4.19/4.5, GPA 3.72)",
+						japanese: "光云大学校 コンピューター情報工学 (4.19/4.5, GPA 3.72)",
 					}[this.language],
 					timestamp: "2017. 03. ~ 2024. 02.",
 				},

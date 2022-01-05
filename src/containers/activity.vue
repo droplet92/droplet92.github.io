@@ -4,83 +4,73 @@
 			justify="center"
 		>
 			<h1>
-				활동
+				{{title[language]}}
 			</h1>
 		</el-row>
 		<el-row>
-			<List v-bind:list="activities" />
+			<Grid
+				:list="activities"
+			/>
 		</el-row>
 	</el-card>
 </template>
 
 <script>
-import List from "../components/List"
+import Grid from "../components/Grid"
 
 export default {
   name: "activity",
 	components: {
-		List,
+		Grid,
 	},
 	props: {
 		language: String,
 	},
+	data: () => ({
+		title: {
+			korean: "활동",
+			english: "Activities",
+			japanese: "活動",
+		},
+	}),
 	computed: {
 		activities() {
 			return [
 				{
 					title: {
-						korean: "화정고등학교 컴퓨터 동아리",
-						english: "Hwajung High School Computer Club",
-						japanese: "Hwajung High School Computer Club",
+						korean: "광운대 X 국민대 SW Challenge",
+						english: "Kwangwoon Univ. X Kookmin Univ. SW Challenge",
+						japanese: "光云大 X 國民大 SWチャレンジ",
 					}[this.language],
-					image: "https://cdn.britannica.com/79/191679-050-C7114D2B/Adult-capybara.jpg",
-					url: "https://hwajung.hs.kr/",
-					begin: "2015. 03.",
-					end: "2016. 12.",
+					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/swchallenge.jpg?raw=true",
+					timestamp: "2017. 06.",
 				},
 				{
 					title: {
-						korean: "광운대학교 중앙 컴퓨터 동아리 COM's",
-						english: "Kwangwoon University Computer Club COM's",
-						japanese: "Kwangwoon University Computer Club COM's",
+						korean: "광운대학교 공학설계입문대회",
+						english: "Kwangwoon Univ. Engineering Design Competition",
+						japanese: "光云大学校 工学設計入門大会",
 					}[this.language],
-					image: "https://chico.ca.us/sites/main/files/imagecache/lightbox/main-images/dog_license.jpg",
-					url: "https://coms.kw.ac.kr",
-					begin: "2017. 03.",
-					end: "2024. 02.",
+					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/engineering_design.jpg?raw=true",
+					timestamp: "2017. 06.",
 				},
 				{
 					title: {
-						korean: "광운대학교 중앙 만화 동아리 CIA",
-						english: "Kwangwoon University Cartoon Club CIA",
-						japanese: "Kwangwoon University Cartoon Club CIA",
+						korean: "광운대학교 2017 IoT 스마트소프트웨어(SW) 경진대회",
+						english: "Kwangwoon Univ. 2017 IoT Smart Software Competition",
+						japanese: "光云大学校 2017 IoT スマートソフトウェアコンペ",
 					}[this.language],
-					image: "https://natashaskitchen.com/wp-content/uploads/2020/05/Vanilla-Cupcakes-3.jpg",
-					url: "https://cartoonisart.duckdns.org",
-					begin: "2017. 03.",
-					end: "2024. 02.",
-				},
-				{
-					title: {
-						korean: "광운대학교 겨울방학 튜터링",
-						english: "Kwangwoon University Winter Vacation Tutoring",
-						japanese: "Kwangwoon University Winter Vacation Tutoring",
-					}[this.language],
-					image: "https://www.nintendo.com//content/dam/noa/en_US/games/switch/s/splatoon-2-switch/splatoon-2-switch-hero.jpg",
-					url: "",
-					begin: "2017. 12.",
-					end: "2017. 12.",
+					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/iotswconf.jpg?raw=true",
+					timestamp: "2017. 11.",
 				},
 				{
 					title: {
 						korean: "자료구조 튜터링",
 						english: "Kwangwoon University Data Structure Tutoring",
-						japanese: "Kwangwoon University Data Structure Tutoring",
+						japanese: "光云大学校 データストラクチャチュータリング",
 					}[this.language],
-					image: "https://www.nintendo.com//content/dam/noa/en_US/games/switch/s/splatoon-2-switch/splatoon-2-switch-hero.jpg",
-					url: "",
-					begin: "2018. 09.",
-					end: "2018. 12.",
+					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/tutoring.jpg?raw=true",
+					timestamp: "2017. 06.",
 				},
 			]
 		}
