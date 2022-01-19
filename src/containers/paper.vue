@@ -50,9 +50,9 @@ export default {
 				},
 				{
 					cite: {
-						korean: '김명지, 김효리, 박유림, 이영현, 이한수, 정범영, 송원철, 정동훈. "1인칭 메타버스 게임의 HUD UI와 공간 UI가 사용자 경험에 미치는 효과" 한국HCI학회 학술대회, (2022)',
-						english: '김명지, 김효리, 박유림, 이영현, 이한수, 정범영, 송원철, 정동훈. "1인칭 메타버스 게임의 HUD UI와 공간 UI가 사용자 경험에 미치는 효과" 한국HCI학회 학술대회, (2022)',
-						japanese: '김명지, 김효리, 박유림, 이영현, 이한수, 정범영, 송원철, 정동훈. "1인칭 메타버스 게임의 HUD UI와 공간 UI가 사용자 경험에 미치는 효과" 한국HCI학회 학술대회, (2022)',
+						korean: '김명지, 김효리, 박유림, 이영현, 이한수, 정범영, 송원철, 정동훈 (2022, 2월). 1인칭 메타버스 게임의 HUD UI와 공간 UI가 사용자 경험에 미치는 효과. HCI KOREA 2022. [Online Presentation].',
+						english: '김명지, 김효리, 박유림, 이영현, 이한수, 정범영, 송원철, 정동훈 (2022, 2월). 1인칭 메타버스 게임의 HUD UI와 공간 UI가 사용자 경험에 미치는 효과. HCI KOREA 2022. [Online Presentation].',
+						japanese: '김명지, 김효리, 박유림, 이영현, 이한수, 정범영, 송원철, 정동훈 (2022, 2월). 1인칭 메타버스 게임의 HUD UI와 공간 UI가 사용자 경험에 미치는 효과. HCI KOREA 2022. [Online Presentation].',
 					}[this.language],
 					timestamp: '2022. 02.',
 					url: "http://hcikorea.org/",

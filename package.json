@@ -1,6 +1,6 @@
 {
-  "name": "dev2_kya",
-  "version": "0.1.0",
+  "name": "LHS",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
