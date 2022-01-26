@@ -55,7 +55,7 @@ export default {
 						japanese: '김명지, 김효리, 박유림, 이영현, 이한수, 정범영, 송원철, 정동훈 (2022, 2월). 1인칭 메타버스 게임의 HUD UI와 공간 UI가 사용자 경험에 미치는 효과. HCI KOREA 2022. [Online Presentation].',
 					}[this.language],
 					timestamp: '2022. 02.',
-					url: "http://hcikorea.org/",
+					url: "https://github.com/droplet92/droplet92.github.io/raw/master/public/1인칭 메타버스 게임의 HUD UI와 공간 UI 효과.pdf",
 				},
 			]
 		} 
