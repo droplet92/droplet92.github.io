@@ -41,7 +41,7 @@ export default {
 			return [
 				{
 					title: {
-						korean: "f1 security (KISA 프로젝트 용역)",
+						korean: "f1 security (한국인터넷진흥원 프로젝트 용역)",
 						english: "f1 security (KISA Project)",
 						japanese: "f1 security (KISAプロジェクト参加)",
 					}[this.language],
@@ -50,16 +50,16 @@ export default {
 				{
 					title: {
 						korean: "해군 정보보호병",
-						english: "ROK Navy Information Security",
-						japanese: "海軍 情報セキュリティ兵",
+						english: "ROK Navy CERT",
+						japanese: "大韓民国海軍 サイバーセキュリティ兵",
 					}[this.language],
 					timestamp: "2021. 10. ~ 2023. 06.",
 				},
 				{
 					title: {
-						korean: "광운대학교 컴퓨터정보공학부 (4.19/4.5, GPA 3.72)",
-						english: "Kwangwoon University Computer Information Engineering (4.19/4.5, GPA 3.72)",
-						japanese: "光云大学校 コンピューター情報工学 (4.19/4.5, GPA 3.72)",
+						korean: "광운대학교 컴퓨터정보공학부 (4.19/4.5)",
+						english: "Kwangwoon University School of Computer and Information Engineering (4.19/4.5)",
+						japanese: "光云大学校 コンピューター情報工学 (4.19/4.5)",
 					}[this.language],
 					timestamp: "2017. 03. ~ 2024. 02.",
 				},

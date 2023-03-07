@@ -18,9 +18,7 @@
 			</el-dropdown>
 		</el-affix>
 	</el-row>
-	<el-row
-		justify="center"
-	>
+	<el-row justify="center">
 		<div id="main">
 			<el-col>
 				<div
@@ -42,10 +40,10 @@ import { SetUp } from "@element-plus/icons-vue"
 </script>
 
 <script>
-import Activity from "./containers/activity"
 import Awards from "./containers/awards"
 import Career from "./containers/career"
 import Certificate from "./containers/certificate"
+import Contacts from "./containers/contacts"
 import Hobby from "./containers/hobby"
 import Introduction from "./containers/introduction"
 import Paper from "./containers/paper"
@@ -65,11 +63,11 @@ export default {
 			Introduction,
 			Program,
 			Hobby,
-			Activity,
 			Paper,
 			Career,
 			Awards,
 			Certificate,
+			Contacts,
 			Thankyou,
 		],
 		language: languages.korean,

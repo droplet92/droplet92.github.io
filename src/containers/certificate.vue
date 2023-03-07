@@ -50,6 +50,22 @@ export default {
 				{
 					title: "JLPT N1 (159/180)",
 					timestamp: "2021. 09.",
+				},
+				{
+					title: {
+						korean: "정보처리기사",
+						english: "정보처리기사",
+						japanese: "応用情報技術者試験"
+					}[this.language],
+					timestamp: "2022. 06.",
+				},
+				{
+					title: {
+						korean: "리눅스마스터 2급",
+						english: "Linux master Level 2",
+						japanese: "Linux master レベル 2",
+					}[this.language],
+					timestamp: "2022. 09.",
 				}
 			]
 		} 
