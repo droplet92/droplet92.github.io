@@ -30,7 +30,11 @@
 						<el-icon color="#409EFC">
 							<Link />
 						</el-icon>
-						<el-link disabled type="primary">
+						<el-link
+							:disabled="paper.japanese === undefined"
+							:href="paper.japanese"
+							type="primary"
+						>
 							日本語(PDF, Self-translation)
 						</el-link>
 					</div>
@@ -66,6 +70,7 @@ export default {
 					journal: "한국정보과학회 2021 학술발표논문집 2054-2056",
 					timestamp: "2021. 06.",
 					url: "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE10583527",
+					japanese: "https://github.com/droplet92/droplet92.github.io/blob/master/public/ransomware.pdf",
 				},
 				{
 					writer: "김명지, 김효리, 박유림, 이영현, 이한수, 정범영, 송원철, 정동훈",
