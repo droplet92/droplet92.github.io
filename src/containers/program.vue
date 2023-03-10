@@ -28,14 +28,38 @@ export default {
 	},
 	data: () => ({
 		title: {
-			korean: "프로그램",
-			english: "Applications",
-			japanese: "アプリケーション",
+			korean: "활동",
+			english: "Activies",
+			japanese: "活動",
 		},
 	}),
 	computed: {
 		programs() {
 			return [
+				{
+					title: {
+						korean: "CIA 동아리 게시판",
+						english: "CIA Club Homepage",
+						japanese: "CIA 同好会 ホームページ",
+					}[this.language],
+					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/cia.gif?raw=true",
+					url: "https://github.com/CartoonIsArt",
+					begin: "2017. 09.",
+					end: "2021. 10.",
+					tags: [ "Web", "React", "JavaScript", "TypeScript", "TypeORM", "AWS", "Docker", "koa", "antd", "NSFWjs" ],
+				},
+				{
+					title: {
+						korean: "HCI KOREA 2022 학술대회",
+						english: "HCI KOREA 2022 Conference",
+						japanese: "HCI KOREA 2022 学術大会",
+					}[this.language],
+					image: "https://img.youtube.com/vi/BwWbenk8UsU/maxresdefault.jpg",
+					url: "https://www.youtube.com/watch?v=BwWbenk8UsU",
+					begin: "2021. 03.",
+					end: "2022. 02.",
+					tags: [ "HCI", "VR", "Unity", "C#" ],
+				},
 				{
 					title: "reversi",
 					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/reversi.gif?raw=true",
@@ -51,30 +75,6 @@ export default {
 					begin: "2020. 10.",
 					end: "2020. 10.",
 					tags: [ "Socket", "C" ],
-				},
-				{
-					title: {
-						korean: "CIA 동아리 게시판",
-						english: "CIA Club Homepage",
-						japanese: "CIA 同好会 ホームページ",
-					}[this.language],
-					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/cia.gif?raw=true",
-					url: "https://github.com/CartoonIsArt",
-					begin: "2017. 09.",
-					end: "2021. 10.",
-					tags: [ "Web", "React", "JavaScript", "TypeScript", "TypeORM", "AWS", "Docker", "koa", "antd", "NSFWjs" ],
-				},
-				{
-					title: {
-						korean: "KKLIM 게임 개발팀",
-						english: "KKLIM Game Dev Team",
-						japanese: "KKLIMゲーム開発チーム",
-					}[this.language],
-					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/dev.jpg?raw=true",
-					url: "https://bitbucket.org",
-					begin: "2021",
-					end: "2023",
-					tags: [ "Game", "Unity", "C#" ],
 				},
 			]
 		} 

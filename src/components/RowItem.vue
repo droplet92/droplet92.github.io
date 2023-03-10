@@ -5,7 +5,6 @@
 				class="noselect item-image"
 				:src="image"
 				fit="cover"
-				lazy
 			/>
 		</el-row>
 		<el-row>
