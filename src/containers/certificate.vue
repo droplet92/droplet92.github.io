@@ -54,7 +54,7 @@ export default {
 				{
 					title: {
 						korean: "정보처리기사",
-						english: "정보처리기사",
+						english: "Engineer Information Processing",
 						japanese: "応用情報技術者試験"
 					}[this.language],
 					timestamp: "2022. 06.",

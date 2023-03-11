@@ -39,8 +39,8 @@ export default {
 				{
 					title: {
 						korean: "CIA 동아리 게시판",
-						english: "CIA Club Homepage",
-						japanese: "CIA 同好会 ホームページ",
+						english: "Club CIA Homepage",
+						japanese: "サークル CIA ホームページ",
 					}[this.language],
 					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/cia.gif?raw=true",
 					url: "https://github.com/CartoonIsArt",
@@ -61,12 +61,24 @@ export default {
 					tags: [ "HCI", "VR", "Unity", "C#" ],
 				},
 				{
+					title: {
+						korean: "COM's 동아리 회지 - MPU6050을 이용한 모션 캡처",
+						english: "Club COM's Article - Motion Capture Using MPU6050",
+						japanese: "サークル COM's 会誌 - MPU6050を使ったモーションキャプチャー",
+					}[this.language],
+					image: "https://img.youtube.com/vi/86nRW5NOb_c/maxresdefault.jpg",
+					url: "https://github.com/droplet92/mpu6050_mocap",
+					begin: "2020. 07.",
+					end: "2020. 09.",
+					tags: [ "Motion Capture", "OpenGL", "C++17", "MPU6050" ],
+				},
+				{
 					title: "reversi",
 					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/reversi.gif?raw=true",
 					url: "https://github.com/droplet92/reversi",
 					begin: "2019. 07.",
 					end: "2019. 11.",
-					tags: [ "Game", "C++17", "Sqlite", "SFML" ],
+					tags: [ "Game", "C++17", "SFML", "Minimax" ],
 				},
 				{
 					title: "devichat",
@@ -74,7 +86,7 @@ export default {
 					url: "https://github.com/droplet92/devichat",
 					begin: "2020. 10.",
 					end: "2020. 10.",
-					tags: [ "Socket", "C" ],
+					tags: [ "Socket", "C", "FreeBSD" ],
 				},
 			]
 		} 

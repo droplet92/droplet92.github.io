@@ -40,6 +40,7 @@ import { SetUp } from "@element-plus/icons-vue"
 </script>
 
 <script>
+import Activities from "./containers/activities"
 import Awards from "./containers/awards"
 import Career from "./containers/career"
 import Certificate from "./containers/certificate"
@@ -47,7 +48,6 @@ import Contacts from "./containers/contacts"
 import Hobby from "./containers/hobby"
 import Introduction from "./containers/introduction"
 import Paper from "./containers/paper"
-import Program from "./containers/program"
 import Thankyou from "./containers/thankyou"
 	
 const languages = {
@@ -61,7 +61,7 @@ export default {
 	data: () => ({
 		components: [
 			Introduction,
-			Program,
+			Activities,
 			Hobby,
 			Paper,
 			Career,

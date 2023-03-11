@@ -23,7 +23,7 @@ export default {
 		name: {
 			korean: "이한수",
 			english: "이한수 (Hansu Lee)",
-			japanese: "이한수 (イ・ハンス)"
+			japanese: "이한수 (Lee Hansu)"
 		},
 		greeting: {
 			korean: "안녕하세요!",

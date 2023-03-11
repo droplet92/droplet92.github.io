@@ -33,12 +33,20 @@ export default {
 		title: {
 			korean: "경력",
 			english: "Career",
-			japanese: "キャリア",
+			japanese: "履歴",
 		},
 	}),
 	computed: {
 		career() {
 			return [
+				{
+					title: {
+						korean: "광운대학교 컴퓨터정보공학부 (4.19/4.5)",
+						english: "Kwangwoon University School of Computer and Information Engineering (4.19/4.5)",
+						japanese: "Kwangwoon University School of Computer and Information Engineering (4.19/4.5)",
+					}[this.language],
+					timestamp: "2017. 03. ~ 2024. 02.",
+				},
 				{
 					title: {
 						korean: "f1 security (한국인터넷진흥원 프로젝트 용역)",
@@ -51,17 +59,9 @@ export default {
 					title: {
 						korean: "해군 정보보호병",
 						english: "ROK Navy CERT",
-						japanese: "大韓民国海軍 サイバーセキュリティ兵",
+						japanese: "大韓民国海軍サイバーセキュリティ兵",
 					}[this.language],
 					timestamp: "2021. 10. ~ 2023. 06.",
-				},
-				{
-					title: {
-						korean: "광운대학교 컴퓨터정보공학부 (4.19/4.5)",
-						english: "Kwangwoon University School of Computer and Information Engineering (4.19/4.5)",
-						japanese: "光云大学校 コンピューター情報工学 (4.19/4.5)",
-					}[this.language],
-					timestamp: "2017. 03. ~ 2024. 02.",
 				},
 			]
 		}

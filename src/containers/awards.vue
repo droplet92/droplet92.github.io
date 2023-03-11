@@ -43,7 +43,7 @@ export default {
 					title: {
 						korean: "광운대 X 국민대 SW Challenge 3등",
 						english: "Kwangwoon Univ. X Kookmin Univ. SW Challenge 3rd.",
-						japanese: "光云大 X 國民大 SWチャレンジ 3rd.",
+						japanese: "Kwangwoon Univ. X Kookmin Univ. SWチャレンジ 3rd.",
 					}[this.language],
 					timestamp: "2017. 06.",
 				},
@@ -51,7 +51,7 @@ export default {
 					title: {
 						korean: "광운대학교 공학설계입문 장려상",
 						english: "Kwangwoon Univ. Engineering Design Competition participation prize",
-						japanese: "光云大学校 工学設計入門大会 奬勵賞",
+						japanese: "Kwangwoon Univ. 工学設計入門大会 奬勵賞",
 					}[this.language],
 					timestamp: "2017. 06.",
 				},
@@ -59,7 +59,7 @@ export default {
 					title: {
 						korean: "광운대학교 2017 IoT 스마트소프트웨어(SW) 경진대회 우수상",
 						english: "Kwangwoon Univ. 2017 IoT Smart Software Competition excellence award",
-						japanese: "光云大学校 2017 IoT スマートソフトウェアコンペティション優秀賞",
+						japanese: "Kwangwoon Univ. 2017 IoT スマートソフトウェアコンペティション優秀賞",
 					}[this.language],
 					timestamp: "2017. 11.",
 				},

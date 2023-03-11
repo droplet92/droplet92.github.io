@@ -38,8 +38,8 @@ export default {
 			return [
 				{
 					title: {
-						korean: "음악",
-						english: "Music",
+						korean: "라이브/콘서트",
+						english: "Music Live/Concert",
 						japanese: "ライブ・コンサート参加",
 					}[this.language],
 					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/gukkasten.jpg?raw=true",
@@ -56,7 +56,7 @@ export default {
 					title: {
 						korean: "여행",
 						english: "Trip",
-						japanese: "札幌",
+						japanese: "旅行",
 					}[this.language],
 					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/trip1812.jpg?raw=true",
 				},

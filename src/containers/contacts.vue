@@ -59,4 +59,8 @@ export default {
 .item-icon {
 	margin-right: 2pt;
 }
+
+.el-link {
+	font-size: 16px;
+}
 </style>
