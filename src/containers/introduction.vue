@@ -12,7 +12,7 @@
 import ColumnItem from "../components/ColumnItem"
 	
 export default {
-  name: "introduction",
+	name: "introduction",
 	components: {
 		ColumnItem,
 	},

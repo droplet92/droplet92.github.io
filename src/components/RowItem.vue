@@ -47,7 +47,6 @@
 </template>
 
 <script>
-import moment from "moment"
 import * as tags from "../tags"
 
 export default {
@@ -64,16 +63,14 @@ export default {
 		url: String,
 		begin: {
 			type: String,
-			required: true,
 			validator(value) {
-				return moment(value).isValid()
+				return !isNaN(Date.parse(value))
 			},
 		},
 		end: {
 			type: String,
-			required: true,
 			validator(value) {
-				return moment(value).isValid()
+				return !isNaN(Date.parse(value))
 			},
 		},
 		tags: {

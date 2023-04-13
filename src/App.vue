@@ -21,15 +21,12 @@
 	<el-row justify="center">
 		<div id="main">
 			<el-col>
-				<div
+				<component
 					v-for="(component,key) in components"
 					v-bind:key="key"
-				>
-					<component
-						v-bind:is="component"
-						:language="language"
-					/>
-				</div>
+					v-bind:is="component"
+					:language="language"
+				/>
 			</el-col>
 		</div>
 	</el-row>
@@ -40,6 +37,7 @@ import { SetUp } from "@element-plus/icons-vue"
 </script>
 
 <script>
+import { markRaw } from "vue"
 import Activities from "./containers/activities"
 import Awards from "./containers/awards"
 import Career from "./containers/career"
@@ -56,21 +54,29 @@ const languages = {
 	japanese: "japanese",
 }
 
+const language = (
+	(navigator.language === "ko-KR")
+	? languages.korean
+	: (navigator.language === "ja")
+		? languages.japanese
+		: languages.english
+)
+
 export default {
   name: 'App',
 	data: () => ({
 		components: [
-			Introduction,
-			Activities,
-			Hobby,
-			Paper,
-			Career,
-			Awards,
-			Certificate,
-			Contacts,
-			Thankyou,
+			markRaw(Introduction),
+			markRaw(Activities),
+			markRaw(Hobby),
+			markRaw(Paper),
+			markRaw(Career),
+			markRaw(Awards),
+			markRaw(Certificate),
+			markRaw(Contacts),
+			markRaw(Thankyou),
 		],
-		language: languages.korean,
+		language,
 	}),
 	methods: {
 		change_dictionary: function (command) {

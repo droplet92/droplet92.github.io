@@ -13,9 +13,12 @@
 					<el-icon class="item-icon">
 						<Message />
 					</el-icon>
-					<span>
+					<el-link
+						href="mailto:lhs1438@gmail.com"
+						type="primary"
+						:underline="false">
 						{{email}}
-					</span>
+					</el-link>
 				</el-row>
 				<el-row justify="start">
 					<img

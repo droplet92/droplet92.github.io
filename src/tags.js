@@ -41,6 +41,9 @@ const techstacks = [
 	"WMI",
 	"WinAPI",
 	"NSFWjs",
+	"FreeBSD",
+	"MPU6050",
+	
 ];
 
 const concepts = [
@@ -53,6 +56,8 @@ const concepts = [
 	"Socket",
 	"Machine Learning",
 	"Minimax",
+	"HCI",
+	"VR",
 ];
 
 export { languages, techstacks, concepts };
