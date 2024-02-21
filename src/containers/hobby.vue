@@ -38,19 +38,11 @@ export default {
 			return [
 				{
 					title: {
-						korean: "라이브/콘서트",
-						english: "Music Live/Concert",
-						japanese: "ライブ・コンサート参加",
+						korean: "음악 리뷰",
+						english: "Music Review",
+						japanese: "音楽レビュー",
 					}[this.language],
 					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/gukkasten.jpg?raw=true",
-				},
-				{
-					title: {
-						korean: "게임",
-						english: "Video game",
-						japanese: "ビデオゲーム",
-					}[this.language],
-					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/game.jpg?raw=true",
 				},
 				{
 					title: {
@@ -59,14 +51,6 @@ export default {
 						japanese: "旅行",
 					}[this.language],
 					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/trip1812.jpg?raw=true",
-				},
-				{
-					title: {
-						korean: "보드게임",
-						english: "Board game",
-						japanese: "ボードゲーム",
-					}[this.language],
-					image: "https://github.com/droplet92/droplet92.github.io/blob/master/public/images/boardgame.jpg?raw=true",
 				},
 			]
 		},
