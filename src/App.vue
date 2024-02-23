@@ -1,94 +1,118 @@
 <template id="app">
-	<el-row justify="end">
-		<el-affix class="app-affix-wrapper" :offset="32">
-			<el-dropdown @command="change_dictionary">
-				<el-button
-					class="app-btn"
-					color="#383C6D"
-					:icon="SetUp"
-					circle
-				/>
-				<template #dropdown>
-					<el-dropdown-menu>
-						<el-dropdown-item command="korean">한국어</el-dropdown-item>
-						<el-dropdown-item command="english">English</el-dropdown-item>
-						<el-dropdown-item command="japanese">日本語</el-dropdown-item>
-					</el-dropdown-menu>
-				</template>
-			</el-dropdown>
-		</el-affix>
+	<el-row
+		:style="{'height': `${windowHeight*0.8}px`, 'margin-bottom': `${windowHeight* -0.1}px`}"
+		justify="center"
+		align="middle"
+	>
+			<video
+				ref="videoPlayer"
+				width="600" height="400"
+				playsinline autoplay loop muted @dragstart.prevent @contextmenu.prevent
+			>
+				<source src="../public/hello.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
 	</el-row>
 	<el-row justify="center">
-		<div id="main">
-			<el-col>
-				<component
-					v-for="(component,key) in components"
+		<el-row
+			justify="space-around"
+			:gutter="40"
+		>
+			<div>
+				<el-col
+					:span="6"
+					v-for="(component,key) in items"
 					v-bind:key="key"
-					v-bind:is="component"
-					:language="language"
-				/>
-			</el-col>
-		</div>
+				>
+					<a
+						class="link"
+						:href="component.link"
+						target="_blank"
+					>
+						<component
+							class="icon"
+							:is="component.icon"
+						/>
+					</a>
+				</el-col>
+			</div>
+		</el-row>
+	</el-row>
+	<el-row justify="center">
+		<p>
+			<a
+				class="mail"
+				href="mailto:lhs1438@gmail.com"
+			>
+				lhs1438@gmail.com
+			</a>
+		</p>
 	</el-row>
 </template>
 
-<script setup>
-import { SetUp } from "@element-plus/icons-vue"
-</script>
-
 <script>
-import { markRaw } from "vue"
-import Activities from "./containers/activities"
-import Awards from "./containers/awards"
-import Career from "./containers/career"
-import Certificate from "./containers/certificate"
-import Contacts from "./containers/contacts"
-import Hobby from "./containers/hobby"
-import Introduction from "./containers/introduction"
-import Paper from "./containers/paper"
-import Thankyou from "./containers/thankyou"
-	
-const languages = {
-	korean: "korean",
-	english: "english",
-	japanese: "japanese",
-}
-
-const language = (
-	(navigator.language === "ko-KR")
-	? languages.korean
-	: (navigator.language === "ja")
-		? languages.japanese
-		: languages.english
-)
-
 export default {
-  name: 'App',
-	data: () => ({
-		components: [
-			markRaw(Introduction),
-			markRaw(Activities),
-			markRaw(Hobby),
-			markRaw(Paper),
-			markRaw(Career),
-			markRaw(Awards),
-			markRaw(Certificate),
-			markRaw(Contacts),
-			markRaw(Thankyou),
-		],
-		language,
-	}),
-	methods: {
-		change_dictionary: function (command) {
-			this.language = languages[command]
+	data() {
+		return {
+			windowHeight: window.innerHeight
+		}
+	},
+	mounted() {
+		this.$nextTick(() => {
+			window.addEventListener('resize', this.onResize);
+		})
+	},
+	beforeUnmount() { 
+		window.removeEventListener('resize', this.onResize); 
+	},
+	methods: {  
+		onResize() {
+			this.windowHeight = window.innerHeight
 		}
 	}
 }
 </script>
 
+<script setup>
+import { AkLinkedinBoxFill } from "@kalimahapps/vue-icons";
+import { AkInstagramFill } from "@kalimahapps/vue-icons";
+import { AkGithubFill } from "@kalimahapps/vue-icons";
+import { SiTistory } from "@kalimahapps/vue-icons";
+
+const items = [
+	{
+		icon: AkLinkedinBoxFill,
+		link: "https://www.linkedin.com/in/hansu-lee-4b6553170",
+	},
+	{
+		icon: AkGithubFill,
+		link: "https://github.com/droplet92",
+	},
+	{
+		icon: AkInstagramFill,
+		link: "https://www.instagram.com/hansu.m3u8",
+	},
+	{
+		icon: SiTistory,
+		link: "https://droplet92.tistory.com",
+	},
+]
+</script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+JP:wght@700&display=swap');
-	
+
+html {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: black;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -100,28 +124,17 @@ export default {
 	--lhs-secondary-color: #383C6D;
 	--lhs-font-color: #CBD7DF;
 }
-	
-#main {
-	max-width: 1080px;
-}
-.timeline {
-	max-width: 720px;
-	width: 100%;
-}
 
-.el-card {
-	border: 0px;
-}
-	
-.app-affix-wrapper {
-	margin-right: 32px;
-}
-
-.app-btn {
+.link {
 	color: white;
 }
-	
-.el-timeline {
-	text-align: left;
+.link .icon {
+	color: inherit;
+	font-size: 2rem;
+}
+
+.mail {
+	color: white;
+	text-decoration: none;
 }
 </style>
