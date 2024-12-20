@@ -75,7 +75,6 @@ export default {
 
 <script setup>
 import { AkLinkedinBoxFill } from "@kalimahapps/vue-icons";
-import { AkInstagramFill } from "@kalimahapps/vue-icons";
 import { AkGithubFill } from "@kalimahapps/vue-icons";
 import { SiTistory } from "@kalimahapps/vue-icons";
 
@@ -89,8 +88,8 @@ const items = [
 		link: "https://github.com/droplet92",
 	},
 	{
-		icon: AkInstagramFill,
-		link: "https://www.instagram.com/hansu.m3u8",
+		icon: <img src="/logo.webp" />,
+		link: "https://overtone.kr",
 	},
 	{
 		icon: SiTistory,
