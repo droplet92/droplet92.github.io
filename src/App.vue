@@ -88,7 +88,7 @@ const items = [
 		link: "https://github.com/droplet92",
 	},
 	{
-		icon: <img src="/logo.webp" />,
+		icon: <img src="/logo.webp" width="32" height="32" />,
 		link: "https://overtone.kr",
 	},
 	{
