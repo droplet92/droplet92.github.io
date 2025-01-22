@@ -78,7 +78,7 @@ const items = [
 		},
 	},
 	{
-		image: "game.png",
+		image: "art.png",
 		title: "Art Auction",
 		video: "https://www.youtube.com/embed/m1WwZTX6lhI",
 		message: undefined,

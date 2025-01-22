@@ -29,7 +29,7 @@
 			>
 				<el-link
 					class="link"
-					href="/portfolio"
+					href="/#/portfolio"
 					:underline="false"
 				>
 					PORTFOLIO
@@ -40,7 +40,7 @@
 				:span="8"
 			>
 				<el-link
-					href="/about"
+					href="/#/about"
 					:underline="false"
 				>
 					ABOUT
