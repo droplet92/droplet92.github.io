@@ -71,10 +71,10 @@ const items = [
 		image: "abyss.png",
 		title: "Abyss Together",
 		video: "https://www.youtube.com/embed/IPYLkwYqR6g",
-		message: "play password: flamenco",
+		message: undefined,
 		link: {
 			play: "https://droplet92.itch.io/abyss-together",
-			code: undefined,
+			code: "https://github.com/droplet92/AbyssTogether",
 		},
 	},
 	{
