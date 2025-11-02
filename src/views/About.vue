@@ -9,23 +9,22 @@
 					justify="space-around"
 					:gutter="24"
 				>
-					<div>
-						<el-col
-							v-for="(component,key) in items"
-							v-bind:key="key"
+					<el-col
+						v-for="(component,key) in items"
+						v-bind:key="key"
+						:span="8"
+					>
+						<el-link
+							target="_blank"
+							:href="component.link"
+							:underline="false"
 						>
-							<el-link
-								target="_blank"
-								:href="component.link"
-								:underline="false"
-							>
-								<component
-									class="icon"
-									:is="component.icon"
-								/>
-							</el-link>
-						</el-col>
-					</div>
+							<component
+								class="icon"
+								:is="component.icon"
+							/>
+						</el-link>
+					</el-col>
 				</el-row>
 			</div>
 			<div>
