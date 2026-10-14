@@ -15,7 +15,7 @@
 			@dragstart.prevent @contextmenu.prevent
 		>
 			<source
-				src="../../public/hello.mp4"
+				src="/hello.mp4"
 				type="video/mp4"
 			/>
 			Your browser does not support the video tag.

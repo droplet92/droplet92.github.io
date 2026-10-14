@@ -35,7 +35,7 @@
 			>
 				<el-col>
 					<img
-						src="../../public/paper.png"
+						src="/paper.png"
 						width="128"
 						height="128"
 					/>

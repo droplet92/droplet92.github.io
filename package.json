@@ -2,39 +2,40 @@
   "name": "droplet92",
   "version": "1.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^0.2.4",
     "@kalimahapps/vue-icons": "^1.4.0",
-    "core-js": "^3.6.5",
     "element-plus": "^2.1.0",
     "vue": "^3.0.0",
     "vue-router": "4.1"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.21.3",
-    "@vue/cli-plugin-babel": "^5.0.8",
-    "@vue/cli-plugin-eslint": "^5.0.8",
-    "@vue/cli-service": "^5.0.8",
-    "@vue/compiler-sfc": "^3.0.0",
+    "@vitejs/plugin-vue": "^6.0.10",
     "eslint": "^8.38.0",
-    "eslint-plugin-vue": "^9.10.0"
+    "eslint-plugin-vue": "^10.11.1",
+    "vite": "^8.3.4"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "browser": true,
+      "node": true,
+      "es2022": true
     },
     "extends": [
-      "plugin:vue/vue3-essential",
+      "plugin:vue/essential",
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "@babel/eslint-parser"
+      "ecmaVersion": "latest",
+      "sourceType": "module"
     },
     "rules": {
       "vue/multi-word-component-names": "off"
